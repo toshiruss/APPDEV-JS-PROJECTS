@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity # 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <style>
+        .container {
+            border-radius: 20px;
+            border: 1px solid ;
+            padding: 50px;
+            box-shadow: 50px 50px #416D19;
+            background-color: #d5f1a8;
+        }
+    </style>
+   
+    
+    <div class="container">
+    <h1>Activity Guide 1</h1>
+    <h4>Item 1: Personal Information</h4>
+    <p>Design a program that displays the following information:</p>
+    <ul>
+        <li>Your Name</li>
+        <li>Your address, with city, state and ZIP</li>
+        <li>Your telephone number</li>
+        <li>Your college major</li>
+    </ul>
+    <strong>Name:</strong><input type="text" class="form-control" id="name" placeholder="Enter your full name" style="width: 300px;"> <br>
+    <strong>Address:</strong><input type="text" class="form-control" id="address" placeholder="Enter your address" style="width: 300px;"> <br>
+    <strong>Telephone:</strong><input type="text"class="form-control" id="telephone" placeholder="Enter your telephone number" style="width: 300px;"> <br>
+    <strong>Major:</strong><input type="text"class="form-control" id="major" placeholder="Enter your program" style="width: 300px;"> <br>
+    <button id="btn1" class="btn btn-success">Submit</button>
+    <p id="output1"></p>
+    
+    <hr>
+
+    <h4>Item 2: Sales Prediction</h4>
+    <p> A company has determined that its annual profit is typically 23 percent of total sales. Design a program
+        that asks the user to enter the projected amount of total sales, and then displays the profit that will be
+        made from that amount.</p>
+    <strong>Amount:</strong><input type="number" class="form-control" id="amount" placeholder="Enter your amount of total sales" style="width: 300px;"> <br>
+  
+    <button id="btn2" class="btn btn-success">Submit</button>
+    <p id="output2"></p>
+
+    <hr>
+    <h4>Item 3: Distance Traveled</h4>
+    <p>Assuming there are no accidents or delays, the distance that a car travels down the interstate can be
+        calculated with the following formula: <br>
+        Distance = Speed x Time <br>
+        A car is traveling at 60 miles per hour. Design a program that displays the following:</p>
+        <ul>
+            <li>The distance the car will travel in 5 hours</li>
+            <li>The distance the car will travel in 8 hours</li>
+            <li>The distance the car will travel in 12 hours</li>
+        </ul>
+    <strong>Distance:</strong><input type="number" class="form-control" id="distance" placeholder="Enter your travel distance" style="width: 300px;"> <br>
+    <button id="btn3" class="btn btn-success">Calculate</button>
+    <p id="output3"></p>
+    <hr>
+
+    <h4>Item 4: Miles-per-Gallon</h4>
+    <p>A car’s miles-per-gallon (MPG) can be calculated with the following formula: <br>
+        MPG = Miles driven / Gallons of gas used <br>
+        Design a program that asks the user for the number of miles driven and the gallons of gas used. It should
+        calculate the car’s miles per gallon and display the result on the screen.</p>
+    <strong>Miles:</strong><input type="number" class="form-control" id="miles" placeholder="Enter miles driven " style="width: 300px;"> <br>
+    <strong>Gallons:</strong><input type="number" class="form-control" id="gallons" placeholder="Enter gallons used " style="width: 300px;"> <br>
+    <button id="btn4" class="btn btn-success">Calculate</button>
+    <p id="output4"></p>
+    <hr>
+
+    <h4>Item 5: Celsius to Fahrenheit Temperature Converter </h4>
+    <p>Design a program that converts Celsius temperatures to Fahrenheit temperatures. The formula is as
+        follows: <br>
+        F = 9/5 C + 32 <br>
+        The program should ask the user to enter a temperature in Celsius, and then display the temperature
+        converted to Fahrenheit.
+        </p>
+    <strong>Temperature:</strong><input type="number" class="form-control" id="temperature" placeholder="Enter a temperature" style="width: 300px;"> <br>
+    <button id="btncel" class="btn btn-success">Convert</button>
+    <p id="output5"></p>
+    <hr>
+
+    
+    <h4>Item 6: Cookie Calories</h4>
+    <p>A bag of cookies holds 40 cookies. The calorie information on the bag claims that there are 10 servings in
+        the bag and that a serving equals 300 calories. Design a program that lets the user enter the number of
+        cookies he or she actually ate and then reports the number of total calories consumed.</p>
+
+   <strong> Cookies:</strong><input type="number" class="form-control" id="cookies" placeholder="Enter number of cookies" style="width: 300px;"> <br>
+    <button id="btn6" class="btn btn-success">Calculate</button>
+    <p id="output6"></p>
+    <hr>
+
+    <h4>Item 7: Male and Female</h4>
+    <p>Design a program that asks the user for the number of males and the number of females registered in a
+        class. The program should display the percentage of males and females in the class.</p>
+    <strong>Male:</strong><input type="number" class="form-control" id="male" placeholder="Enter number of males" style="width: 300px;"> <br>
+    <strong>Females:</strong><input type="number" class="form-control" id="female" placeholder="Enter number of females" style="width: 300px;"> <br>
+
+    <button id="btn7" class="btn btn-success">Calculate</button>
+    <p id="output7"></p>
+    <hr>
+</div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
