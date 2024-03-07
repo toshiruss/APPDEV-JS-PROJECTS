@@ -1,21 +1,21 @@
 const btn1 = document.getElementById("btn1");
 btn1.addEventListener("click", () => {
-    // Input from textbox id
-    let number = parseInt(document.getElementById("number").value);
-
-    if (number >= 86400) {
-        number = number / 86400 + " day/s";
-    } else if (number >= 3600) {
-        number = number / 3600 + " hour/s";
-    } else if (number >= 60) {
-        number = number /60 + " minute/s";
-    }
-
-    // Displaying the output
-    let x = `
-    ${number}
-    `;
-    document.getElementById("output1").innerHTML = x;
+// Input from textbox id
+let number = parseInt(document.getElementById("number").value);
+if (number >= 86400) {
+number = number / 86400 + " day/s";
+} else if (number >= 3600) {
+number = number / 3600 + " hour/s";
+} else if (number >= 60) {
+number = number /60 + " minute/s";
+} else if (number < 60){
+number = number + " second/s";
+}
+// Displaying the output
+let x = `
+${number}
+`;
+document.getElementById("output1").innerHTML = x;
 });
 
 const btn2 = document.getElementById("btn2");
@@ -25,18 +25,20 @@ btn2.addEventListener("click", () => {
     let pounds = number2;
 
     if (pounds <= 2) {
-        number2 = "The shipping charges is $1.10";
+        ship = 1.1;
     } else if (pounds > 2 && pounds <= 6 ) {
-        number2 = "The shipping charges is $2.20";
+        ship =  2.2 ;
     } else if (pounds > 6 && pounds <= 10) {
-        number2 = "The shipping charges is $3.70";
+        ship = 3.7 ;
     } else if(pounds > 10){
-        number2 ="The shipping charges is $3.80";
+        ship = 3.8 ;
     }
+    let tot= ship * pounds;
+
 
     // Displaying the output
     let x = `
-    ${number2}
+    ${tot}
     `;
     document.getElementById("output2").innerHTML = x;
 });
