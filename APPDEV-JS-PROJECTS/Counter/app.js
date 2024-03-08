@@ -28,14 +28,12 @@ btns.forEach((btn) => {
         }else if(styles.contains('decrease5')){
             console.log("Decreased is pressed")
             count = count - 5
-        }
-        
-
-        if(styles.contains('random')){
+        }else if(styles.contains('random')){
             console.log("Random")
             count = Math.floor(Math.random() * (500 -(-500) +1)) + (-500) 
 
         }
+        
         
         if(count > 0){
             value.style.color = "green"
